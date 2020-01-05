@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shortcuts xmlns:android="http://schemas.android.com/apk/res/android">
+    <shortcut
+        android:enabled="true"
+        android:icon="@drawable/ic_shortcut_qr_code"
+        android:shortcutDisabledMessage="@string/shortcut_disabled_message"
+        android:shortcutId="scan_qr"
+        android:shortcutLongLabel="@string/label_shortcut_long_qr"
+        android:shortcutShortLabel="@string/label_shortcut_short_qr">
+        <intent
+            android:action="android.intent.action.VIEW"
+            android:targetClass="com.example.notify.QrScanner"
+            android:targetPackage="com.example.notify"/>
+    </shortcut>
+
+    <shortcut
+        android:enabled="true"
+        android:icon="@drawable/ic_shortcut_poster"
+        android:shortcutDisabledMessage="@string/shortcut_disabled_message"
+        android:shortcutId="scan_ocr"
+        android:shortcutLongLabel="@string/label_shortcut_long_ocr"
+        android:shortcutShortLabel="@string/label_shortcut_short_ocr">
+
+        <intent
+            android:action="android.intent.action.VIEW"
+            android:targetClass="com.example.notify.MainActivity"
+            android:targetPackage="com.example.notify"/>
+
+    </shortcut>
+
+</shortcuts>
